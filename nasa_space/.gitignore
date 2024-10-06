@@ -1,1 +1,5 @@
-.md
+node_modules/
+.env
+*.log
+README.MD
+node_modules

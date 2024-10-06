@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3.js Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include D3.js -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/@deck.gl/core@latest/dist.min.js"></script>
+    <script src="https://unpkg.com/@deck.gl/layers@latest/dist.min.js"></script>
+    <script src="https://unpkg.com/@deck.gl/mapbox@latest/dist.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--mapbox-->
+    <div id="map"></div>
+    <div id="controls">
+        <button class="btn" id="btn-chennai">Chennai</button>
+        <button class="btn" id="btn-bangalore">Bangalore</button>
+    </div>
+
+
+    <div id="app"></div>
+        <h1>Yearly Data Visualization</h1>
+        <div id="slider-container">
+            <input type="range" id="year-slider" min="2000" max="2006" value="2000">
+            <span id="year-label">2000</span>
+        </div>
+        <div id="chart"></div>
+
+        
+        
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
